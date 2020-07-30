@@ -1,3 +1,20 @@
+/*
+ * =====================================================================================
+ *
+ *       Filename:  Inheritance04LocalClass.cpp
+ *
+ *    Description:  Inheritance Local Classes
+ *
+ *        Created:  26/07/2020
+ *
+ *         Author:  Maikol Guzmán mike@guzmanalan.com
+ *   Organization:  Universidad Nacional de Costa Rica
+ *
+ * =====================================================================================
+ */
+
+#include <iostream>  // allows program to output data to the screen
+
 class OtherClass {
   int numberA = 3; // private property
   friend class Test; // modify access
@@ -27,6 +44,8 @@ public:
 };
 
 int main() {
+  std::cout << "Welcome to the UNA!" << std::endl;  // display message
+
   Test test;
   return test.getValue();
 }
